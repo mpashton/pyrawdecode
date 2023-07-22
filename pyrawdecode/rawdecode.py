@@ -352,7 +352,7 @@ class RawDecode(object):
         return
   
 
-if __name__ == "__main__":
+def main():
     parser = argparse.ArgumentParser(description='Raw image decoder')
     # input / format
     parser.add_argument('input', nargs='?', type=str, help='input file', default=None)
@@ -499,4 +499,5 @@ if __name__ == "__main__":
 
             Image.fromarray(rawdecoder.rgb).show()
         
-  
+if __name__ == "__main__":
+    main()
