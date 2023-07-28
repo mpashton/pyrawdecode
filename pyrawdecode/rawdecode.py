@@ -107,7 +107,7 @@ class RawDecode(object):
             self.decoded_raw16 = self.DecodeRaw16(im_byte_arr, rawformat, self.endian)
 
         # Scale data from lower bpp to 16 bpp
-        self.decoded_raw16 = self.decoded_raw16*get_scale_factor(src_bpp=raw_format._bpp, tgt_bpp=16)
+        self.decoded_raw16 = self.decoded_raw16*get_scale_factor(src_bpp=rawformat._bpp, tgt_bpp=16)
 
         return self.decoded_raw16
 
